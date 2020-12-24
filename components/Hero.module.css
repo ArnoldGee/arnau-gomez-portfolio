@@ -1,0 +1,34 @@
+.hero {
+  color: white;
+  padding: 3rem;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  background: hsl(290, 100%, 57%);
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(45deg, #da22ff, #9733ee);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(45deg, #da22ff, #9733ee);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.custom-shape-divider-bottom-1608801745 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1608801745-svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 131px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1608801745 .shape-fill {
+    fill: #FFFFFF;
+}
