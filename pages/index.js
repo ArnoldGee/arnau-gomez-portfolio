@@ -5,10 +5,17 @@ import WigglyEffect from '../components/WigglyEffect';
 import MiddleHero from '../components/MiddleHero'
 import styles from '../styles/Home.module.css';
 import Footer from '../components/Footer';
+import SkillsSection from '../components/SkillsSection';
 
 export default function Home() {
   return (
-    <div className={styles.home}>
+    <main className={styles.home}>
+      <Head>
+        <script
+          src="https://kit.fontawesome.com/a24919ac07.js"
+          crossorigin="anonymous"
+        ></script>
+      </Head>
       <Hero>
         <h1>Hi. I'm Arnau Gómez,</h1>
         <h1>
@@ -28,6 +35,8 @@ export default function Home() {
         <h2 className="text-center">
           I have the skills that your most demanding projects need.
         </h2>
+        <br />
+        <SkillsSection />
       </MiddleHero>
       <Section>
         <h2 className="inverted text-center">You name it. I make it.</h2>
@@ -35,6 +44,6 @@ export default function Home() {
       <Footer>
         <h2 className="text-center">Meet me where the future is.</h2>
       </Footer>
-    </div>
+    </main>
   );
 }

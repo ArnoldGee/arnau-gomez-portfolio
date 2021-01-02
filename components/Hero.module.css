@@ -6,6 +6,7 @@
 .heroContainer {
   width: 100%;
   background-color: var(--dominant);
+  margin: -1px 0;
 }
 .heroSVG {
   position: relative;

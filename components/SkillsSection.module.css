@@ -1,0 +1,14 @@
+.skillsSection{
+  display: grid;
+  grid-template-areas:
+    "a c"
+    "b c"
+}
+.icon {
+  display: inline;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.iconShape{
+  fill: var(--secondary)
+}
