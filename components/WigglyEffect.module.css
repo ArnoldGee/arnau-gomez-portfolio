@@ -19,7 +19,7 @@
 .blurredState {
   transition: all 1.2s cubic-bezier(.95,.01,.73,1);
   letter-spacing: -2rem;
-    filter: blur(0.5rem);
+    filter: blur(1rem);
 }
 .normalState {
   transition: all 1.2s   cubic-bezier(.2,0,0,1);

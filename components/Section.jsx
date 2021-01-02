@@ -1,11 +1,14 @@
-import styles from './Section.module.css'
+import styles from './Section.module.css';
 
-const Section = ({children}) => {
+const Section = ({children, noPaddingTop, noPaddingBottom}) => {
   return (
-    <section className={styles.section}>
+    <section
+    style={{paddingBottom: noPaddingBottom && '0', paddingTop: noPaddingTop && '0'}}
+      className={styles.section}
+    >
       {children}
     </section>
-  )
-}
+  );
+};
 
-export default Section
+export default Section;

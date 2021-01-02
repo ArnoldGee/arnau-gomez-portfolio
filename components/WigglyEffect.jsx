@@ -4,13 +4,17 @@ import {useState, useEffect} from 'react';
 const descriptions = [
   'creative',
   'full stack',
-  'React',
-  'Vue',
-  'Next.js',
   'designer and',
-  'digital researcher and',
+  'researcher and',
   'hard-working',
   'Typescript',
+  'React',
+  'Vue',
+  'Node.js',
+  'Next.js',
+  'Gatsby',
+  'GraphQL',
+  'PWA',
 ];
 
 const WigglyEffect = () => {

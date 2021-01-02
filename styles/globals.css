@@ -7,6 +7,8 @@ body {
   padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--secondary);
+  background-color: var(--dominant);
 }
 * {
   box-sizing: border-box;
@@ -59,9 +61,9 @@ a {
 */
 
 :root {
-  --dominant: #9733ee; /* For the background, 60%*/
+  --dominant:  #DA22FF; /* For the background, 60%*/
   --secondary: white; /* For the main elements, 30%*/
-  --accent: #da22ff; /* For little things that you want to stand out, 10% */
+  --accent: #9733ee; /* For little things that you want to stand out, 10% */
 
   /* --secondary-2: #FFD563;
   --secondary-3: #F8B500; */
@@ -71,9 +73,6 @@ a {
   --info: #30bced;
   --failure: #ff0340;
 }
-.accent {
-  color: var(--accent)
-}
 
 /* ====================================================== */
 /* =================== Add some fonts =================== */
@@ -81,18 +80,16 @@ a {
 
 /* Go to https://type-scale.com/ */
 
-@import url('https://fonts.googleapis.com/css?family=Inter:400,600');
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700');
 
 html {
   font-size: 100%;
 } /*16px*/
 
 body {
-  background: white;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 1.75;
-  color: #000000;
 }
 
 p {
@@ -104,20 +101,21 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 3rem 0 1.38rem;
+  margin: 0;
   font-family: 'Inter', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 }
 
 h1 {
+  font-weight: bold;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 5.052rem;
 }
 
 h2 {
-  font-size: 2.441rem;
+  font-size: 3.441rem;
   line-height: 1.4;
 }
 
@@ -137,9 +135,17 @@ small,
 .text_small {
   font-size: 0.8rem;
 }
+.inverted {
+  color: black;
+}
+
 /* Custom selection color*/
 *::selection {
-  background: var(--accent);
+  background: var(--secondary);
+  color: var(--dominant);
+}
+.inverted::selection{
+  background: var(--dominant);
   color: var(--secondary);
 }
 /*Smart quotes */
@@ -152,11 +158,12 @@ q {
 /* ====================================================== */
 
 /*Text*/
-.white {
-  color: white;
+.text-center {
+  text-align: center;
 }
-.text-gradient {
-  background: linear-gradient(to left, var(--secondary-3), var(--secondary-2));
+.text-accent {
+  color: var(--dominant);
+  background: linear-gradient(to left, var(--accent), var(--dominant));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -190,9 +197,6 @@ q {
 /* ====================================================== */
 
 @media (max-width: 672px) {
-  :root {
-    font-size: 62.5%; /* Fa que en el mòbil totes les mides rem siguin més petites. */
-  }
   h1 {
     font-size: 3rem;
   }
