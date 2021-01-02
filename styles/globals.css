@@ -16,7 +16,7 @@ body {
 
 button,
 input[type='submit'],
-input[type='reset'] {
+input[type='reset'], summary{
   background: none;
   color: inherit;
   border: none;
@@ -31,10 +31,10 @@ a {
   text-decoration: inherit; /* no underline */
 }
 
-/* ul {
-    padding: 0;
-    list-style-type: none;
-} */
+ul {
+    list-style-type: '-  ';
+    padding-left: 0.8rem;
+}
 
 /* textarea {
   border: none;
@@ -83,7 +83,7 @@ a {
 @import url('https://fonts.googleapis.com/css?family=Inter:400,700');
 
 html {
-  font-size: 120%;
+  font-size: 110%;
 } /*16px*/
 
 body {
@@ -134,7 +134,9 @@ h5 {
 
 small,
 .text_small {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
+  line-height: 140%;
+  color: #6C6C6C;
 }
 .inverted {
   color: black;
@@ -142,12 +144,8 @@ small,
 
 /* Custom selection color*/
 *::selection {
-  background: var(--secondary);
-  color: var(--dominant);
-}
-.inverted::selection{
   background: var(--dominant);
-  color: var(--secondary);
+  color: var(--secondary)
 }
 /*Smart quotes */
 q {

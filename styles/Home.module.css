@@ -1,3 +1,12 @@
 .home {
   background-color: var(--secondary);
 }
+
+.icon {
+  display: inline;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.iconShape{
+  fill: var(--secondary)
+}

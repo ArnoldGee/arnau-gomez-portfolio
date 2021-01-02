@@ -1,0 +1,13 @@
+.button{
+  padding: 0.5rem;
+  background-color: var(--dominant);
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.buttonLight{
+  padding: 0.5rem;
+  color: black;
+  border-radius: 0.5rem;
+  margin-right: 0.5rem;
+}
