@@ -9,6 +9,7 @@ import Footer from '../components/Footer';
 import SkillsSection from '../components/SkillsSection';
 import FlexboxSection from '../components/FlexboxSection';
 import ServiceCard from '../components/ServiceCard'
+import ProjectsSection from '../components/ProjectsSection';
 
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         </h1>
         <h1>web developer.</h1>
       </Hero>
-      <Section>
+      <Section noPaddingBottom>
         <hgroup className="inverted text-center">
           <h2>You only have one website.</h2>
           <h2>
@@ -29,7 +30,7 @@ export default function Home() {
           </h2>
         </hgroup>
       </Section>
-      {/*Here goes the projects section */}
+      <ProjectsSection />
       <MiddleHero>
         <h2 className="text-center">
           I have the skills that your most demanding projects need.
@@ -41,7 +42,11 @@ export default function Home() {
         <h2 className="inverted text-center">You name it. I make it.</h2>
       </Section>
       <FlexboxSection>
-        <ServiceCard title="Full stack projects" price="3000$" >
+        <ServiceCard
+          href="mailto:agomez1f@gmail.com"
+          title="Full stack projects"
+          price="3000$"
+        >
           <ul>
             <li>Complex MERN stack projects</li>
             <li>
@@ -58,7 +63,11 @@ export default function Home() {
             </li>
           </ul>
         </ServiceCard>
-        <ServiceCard title="Frontend & design projects" price="1000$">
+        <ServiceCard
+          href="mailto:agomez1f@gmail.com"
+          title="Frontend & design projects"
+          price="1000$"
+        >
           <ul>
             <li>Stunning landing pages & portfolios</li>
             <li>Complex projects w/ React / Vue / Next/ Gatsby</li>
@@ -67,12 +76,14 @@ export default function Home() {
               Transform your website into a mobile app / a desktop app with PWA/
               React Native technology.
             </li>
-            <li>
-              Fix any bug and improve your app’s performance
-            </li>
+            <li>Fix any bug and improve your app’s performance</li>
           </ul>
         </ServiceCard>
-        <ServiceCard title="Startups" price="Free">
+        <ServiceCard
+          href="mailto:agomez1f@gmail.com"
+          title="Startups"
+          price="Free"
+        >
           If you are working on a startup idea that’s going to change the world,
           hire me for a competitive price or let me join as a co-founder for
           free.

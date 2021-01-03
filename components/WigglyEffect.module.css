@@ -28,7 +28,7 @@
 }
 @media (max-width: 672px) {
   .blurredState {
-    letter-spacing: -1rem;
+    letter-spacing: -90%;
   }
 }
 
