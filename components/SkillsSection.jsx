@@ -28,10 +28,10 @@ const SkillsSection = () => {
           </svg>
           <svg className={styles.icon} fill="none" viewBox="0 -2 30 30">
             <path
-              clip-rule="evenodd"
+              clipRule="evenodd"
               className={styles.iconShape}
               d="M.986 0H25.31a.98.98 0 01.986.975v24.05a.98.98 0 01-.986.975H.986A.98.98 0 010 25.025V.975A.98.98 0 01.986 0zm13.632 13.832V11.7h-9.36v2.132H8.6v9.495h2.66v-9.495zm1.06 9.244a5.66 5.66 0 001.522.487c.585.108 1.203.162 1.852.162a8.86 8.86 0 001.802-.178c.569-.12 1.068-.315 1.497-.588s.768-.63 1.019-1.07.375-.986.375-1.635c0-.47-.072-.882-.215-1.236a2.883 2.883 0 00-.618-.945c-.27-.275-.593-.523-.97-.742s-.8-.425-1.274-.62a16.19 16.19 0 01-.932-.41 4.74 4.74 0 01-.701-.405 1.783 1.783 0 01-.445-.438.91.91 0 01-.157-.523c0-.178.047-.339.14-.482.094-.143.225-.266.396-.37s.38-.182.627-.238c.247-.057.522-.085.825-.085a5.608 5.608 0 011.435.199c.247.067.488.152.722.255.233.102.45.221.647.356v-2.424a6.522 6.522 0 00-1.316-.337 10.893 10.893 0 00-1.637-.109 7.73 7.73 0 00-1.781.199c-.561.132-1.055.339-1.481.62s-.763.64-1.01 1.074c-.248.435-.372.956-.372 1.561 0 .773.227 1.433.68 1.979.455.546 1.143 1.008 2.067 1.386.363.146.701.29 1.015.43.313.14.584.287.812.438.228.151.408.316.54.494a.995.995 0 01.075 1.075c-.083.143-.208.267-.376.373s-.376.188-.627.247c-.25.06-.543.09-.878.09a5.089 5.089 0 01-1.7-.297 5.094 5.094 0 01-1.558-.887z"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             />
           </svg>
           <svg className={styles.icon} aria-hidden="true" viewBox="0 0 448 512">
@@ -72,7 +72,8 @@ const SkillsSection = () => {
         </p>
         <p>
           Developer & researcher in digital literature (UAB university), where I
-          learned about <strong>team leadership and Agile Methodologies</strong>.
+          learned about <strong>team leadership and Agile Methodologies</strong>
+          .
         </p>
         <p>2 years doing literary influencer marketing on Instagram.</p>
       </article>
@@ -96,7 +97,7 @@ const SkillsSection = () => {
             <path
               d="M34.992 23.495h27.855v2.219H37.546v16.699h23.792v2.219H37.546v18.334h25.591v2.219H34.992v-41.69zm30.35 0h2.96l13.115 18.334 13.405-18.334L113.055.207 83.1 43.756l15.436 21.429H95.46L81.417 45.683 67.316 65.185h-3.018L79.85 43.756 65.343 23.495zm34.297 2.219v-2.219h31.742v2.219h-14.623v39.47h-2.554v-39.47H99.64zM.145 23.495h3.192l44.011 66.003L29.16 65.185 2.814 26.648l-.116 38.537H.145v-41.69zm130.98 38.801c-.523 0-.914-.405-.914-.928 0-.524.391-.929.913-.929.528 0 .913.405.913.929 0 .523-.385.928-.913.928zm2.508-2.443H135c.019.742.56 1.24 1.354 1.24.888 0 1.391-.535 1.391-1.539v-6.356h1.391v6.362c0 1.808-1.043 2.849-2.77 2.849-1.62 0-2.732-1.01-2.732-2.556zm7.322-.08h1.379c.118.853.95 1.395 2.149 1.395 1.117 0 1.937-.58 1.937-1.377 0-.685-.521-1.097-1.708-1.377l-1.155-.28c-1.62-.38-2.36-1.166-2.36-2.487 0-1.602 1.304-2.668 3.26-2.668 1.82 0 3.15 1.066 3.23 2.58h-1.354c-.13-.828-.85-1.346-1.894-1.346-1.1 0-1.832.53-1.832 1.34 0 .642.472 1.01 1.64 1.284l.987.243c1.838.43 2.596 1.178 2.596 2.53 0 1.72-1.33 2.799-3.453 2.799-1.987 0-3.323-1.029-3.422-2.637z"
               className={styles.iconShape}
-              fill-rule="nonzero"
+              fillRule="nonzero"
             ></path>
           </svg>
           <svg className={styles.icon} aria-hidden="true" viewBox="0 0 448 512">
@@ -165,22 +166,20 @@ const SkillsSection = () => {
             <strong>Learn more</strong>
           </summary>
           <article className={styles.detailsContent}>
-            <p>
-              Specialized in both the Vue and React.js ecosystems:
-              <ul>
-                <li>
-                  Integration with keystone libraries like Redux, React-Router
-                  and Apollo-GraphQL
-                </li>
-                <li>
-                  Testing with Jest, Enzyme, Chai, Mocha. Performance analysis
-                  with profiler.
-                </li>
-                <li>
-                  Experience with modern SSR frameworks like Gatsby and Next.js
-                </li>
-              </ul>
-            </p>
+            <p>Specialized in both the Vue and React.js ecosystems:</p>
+            <ul>
+              <li>
+                Integration with keystone libraries like Redux, React-Router and
+                Apollo-GraphQL
+              </li>
+              <li>
+                Testing with Jest, Enzyme, Chai, Mocha. Performance analysis
+                with profiler.
+              </li>
+              <li>
+                Experience with modern SSR frameworks like Gatsby and Next.js
+              </li>
+            </ul>
             <p>
               Deep knowledge of UI design tools like Figma, Adobe XD and
               Photoshop.

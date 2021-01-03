@@ -9,7 +9,7 @@ const ServiceCard = ({href, title, price, children}) => {
       <div className={styles.servicePicture} />
       <section className={styles.serviceContent}>
         <h4 className="inverted">{title}</h4>
-        <p className="text_small">{children}</p>
+        <div className="text_small">{children}</div>
         <div>
           <Button href={href}>{price}</Button>
           <Button

@@ -17,7 +17,10 @@ export default function Home() {
     <main className={styles.home}>
       <Head>
         <title>Arnau Gómez | Web Developer</title>
-        <meta name="Arnau Gómez | Web Developer" content="I'm Arnau Gómez, a full stack Web and Mobile Developer specialized in web design and JavaScript / TypeScript front-end libraries like React and Vue." />
+        <meta
+          name="Arnau Gómez | Web Developer"
+          content="I'm Arnau Gómez, a full stack Web and Mobile Developer specialized in web design and JavaScript / TypeScript front-end libraries like React and Vue."
+        />
       </Head>
       <Hero>
         <h1>Hi. I'm Arnau Gómez,</h1>
@@ -51,7 +54,7 @@ export default function Home() {
           title="Full stack projects"
           price="3000$"
         >
-          <ul>
+          <ul className="text_small">
             <li>Complex MERN stack projects</li>
             <li>
               Backend technologies: Node, Deno, MongoDB, SQL, Firebase. Also
@@ -72,7 +75,7 @@ export default function Home() {
           title="Frontend & design projects"
           price="1000$"
         >
-          <ul>
+          <ul className="text_small">
             <li>Stunning landing pages & portfolios</li>
             <li>Complex projects w/ React / Vue / Next/ Gatsby</li>
             <li>UX / UI/ Graphic design</li>
@@ -88,9 +91,11 @@ export default function Home() {
           title="Startups"
           price="Free"
         >
-          If you are working on a startup idea that’s going to change the world,
-          hire me for a competitive price or let me join as a co-founder for
-          free.
+          <p className="text_small">
+            If you are working on a startup idea that’s going to change the
+            world, hire me for a competitive price or let me join as a
+            co-founder for free.
+          </p>
         </ServiceCard>
       </FlexboxSection>
       <Footer>

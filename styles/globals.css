@@ -93,7 +93,7 @@ body {
   line-height: 140%;
 }
 
-p {
+p, ul {
   margin-bottom: 0.5rem;
   font-size: 0.9rem;
 }
