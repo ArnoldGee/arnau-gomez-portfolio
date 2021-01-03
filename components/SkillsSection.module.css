@@ -35,4 +35,8 @@
     "c"
     "b";
   }
+  .detailsContent {
+  max-height: initial;
+  overflow-y: scroll;
+}
 }
