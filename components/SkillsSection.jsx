@@ -74,6 +74,7 @@ const SkillsSection = () => {
           Developer & researcher in digital literature (UAB university), where I
           learned about <strong>team leadership and Agile Methodologies</strong>.
         </p>
+        <p>2 years doing literary influencer marketing on Instagram.</p>
       </article>
       <article style={{gridArea: 'c'}}>
         <h3>Tools and services</h3>

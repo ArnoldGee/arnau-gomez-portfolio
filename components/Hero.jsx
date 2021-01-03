@@ -5,7 +5,7 @@ const Hero = ({children}) => {
   return (
     <header className={styles.hero}>
       <article className={styles.heroContainer}>
-        <Section noPaddingBottom>{children}</Section>
+        <Section>{children}</Section>
       </article>
       <svg
         className={styles.heroSVG}

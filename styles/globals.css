@@ -16,7 +16,8 @@ body {
 
 button,
 input[type='submit'],
-input[type='reset'], summary{
+input[type='reset'],
+summary {
   background: none;
   color: inherit;
   border: none;
@@ -32,8 +33,8 @@ a {
 }
 
 ul {
-    list-style-type: '-  ';
-    padding-left: 0.8rem;
+  list-style-type: '-  ';
+  padding-left: 0.8rem;
 }
 
 /* textarea {
@@ -61,7 +62,7 @@ ul {
 */
 
 :root {
-  --dominant:  #DA22FF; /* For the background, 60%*/
+  --dominant: #da22ff; /* For the background, 60%*/
   --secondary: white; /* For the main elements, 30%*/
   --accent: #9733ee; /* For little things that you want to stand out, 10% */
 
@@ -69,9 +70,9 @@ ul {
   --secondary-3: #F8B500; */
 
   /*Colors with semantic value, use only if necessary*/
-  --success: #b8b42d;
+  /* --success: #b8b42d;
   --info: #30bced;
-  --failure: #ff0340;
+  --failure: #ff0340; */
 }
 
 /* ====================================================== */
@@ -93,7 +94,8 @@ body {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 h1,
@@ -136,7 +138,7 @@ small,
 .text_small {
   font-size: 0.7rem;
   line-height: 140%;
-  color: #6C6C6C;
+  color: #6c6c6c;
 }
 .inverted {
   color: black;
@@ -145,7 +147,7 @@ small,
 /* Custom selection color*/
 *::selection {
   background: var(--dominant);
-  color: var(--secondary)
+  color: var(--secondary);
 }
 /*Smart quotes */
 q {
@@ -195,8 +197,14 @@ q {
 /* ==================== Media queries =================== */
 /* ====================================================== */
 
-@media (max-width: 672px) {
+@media screen and (max-width: 700px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.563rem;
   }
 }

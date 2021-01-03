@@ -18,7 +18,7 @@
 
 .blurredState {
   transition: all 1.2s cubic-bezier(.95,.01,.73,1);
-  letter-spacing: -2rem;
+  letter-spacing: -1.5rem;
     filter: blur(1rem);
 }
 .normalState {
@@ -26,9 +26,10 @@
   letter-spacing: initial;
     filter: blur(0);
 }
-@media (max-width: 672px) {
+@media screen and (max-width: 700px){
   .blurredState {
-    letter-spacing: -90%;
+    letter-spacing: -1rem;
+    filter: blur(0.5rem);
   }
 }
 

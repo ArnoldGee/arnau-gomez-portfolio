@@ -15,6 +15,10 @@ import ProjectsSection from '../components/ProjectsSection';
 export default function Home() {
   return (
     <main className={styles.home}>
+      <Head>
+        <title>Arnau Gómez | Web Developer</title>
+        <meta name="Arnau Gómez | Web Developer" content="I'm Arnau Gómez, a full stack Web and Mobile Developer specialized in web design and JavaScript / TypeScript front-end libraries like React and Vue." />
+      </Head>
       <Hero>
         <h1>Hi. I'm Arnau Gómez,</h1>
         <h1>

@@ -1,8 +1,10 @@
 .projectsSection {
-  width: 90vw;
+  width: 100%;
   max-width: 850px;
   position: relative;
-  margin: 2rem auto;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 .projectsCard {
   display: grid;
@@ -19,6 +21,7 @@
 .projectPicture{
   background-color: var(--dominant);
 }
+
 .projectDescription {
   padding: 1rem;
 }
@@ -30,16 +33,37 @@
 }
 
 .chevronLeft, .chevronRight {
-  z-index: 2;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .chevronLeft{
   left: -3rem;
-  top: 50%;
-  transform: translateY(-50%);
+  
 }
 .chevronRight {
   right: -3rem;
-  transform: translateY(-50%);
-  top: 50%;
+}
+
+@media screen and (max-width: 700px){
+  .projectsSection{
+    padding-top: 1rem;
+    overflow-y: hidden;
+  }
+  .projectsCard {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr;
+    padding-bottom: 3rem;
+  }
+  .chevronLeft {
+    left: 2.5rem;
+  }
+  .chevronRight {
+    right: 2.5rem;
+  }
+  .chevronLeft, .chevronRight {
+    top: initial;
+    bottom: 3rem;
+    transform: initial;
+  }
 }
