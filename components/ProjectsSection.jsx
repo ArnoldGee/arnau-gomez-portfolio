@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import styles from './ProjectsSection.module.css';
 import Button from './Button';
-import { motion, AnimatePresence } from 'framer-motion';
+import {motion, AnimatePresence} from 'framer-motion';
 
 const projectsInfo = [
   {
@@ -29,7 +29,7 @@ const projectsInfo = [
       'A team project with an illustrator and a web designer. DiverTeach provides all the tools that creative teachers need in one place. Currently working on version 2, which will be installable on mobile devices.',
     builtWith: 'React, Redux, TypeScript',
     website: 'https://diverteach.netlify.app/',
-    gitHub: 'https://github.com/ArnoldGee/diverteach',
+    gitHub: 'https://github.com/ArnoldGee/diverteach-2',
     picture: 'https://i.imgur.com/Q71N5Sa.jpg',
   },
   {
@@ -43,7 +43,7 @@ const projectsInfo = [
   {
     title: 'MatMat',
     description:
-      "A mobile-friendly app used by hundreds of students to learn maths while exploring a magical universe. It allows students to self-assess themselves and teachers to collect data about their results.",
+      'A mobile-friendly app used by hundreds of students to learn maths while exploring a magical universe. It allows students to self-assess themselves and teachers to collect data about their results.',
     builtWith: 'React, Redux, Framer Motion',
     website: 'https://mat-mat.netlify.app/',
     gitHub: 'https://github.com/ArnoldGee/mat-mat',
@@ -53,16 +53,18 @@ const projectsInfo = [
 
 const ProjectsSection = () => {
   const [directionRight, setDirectionRight] = useState(true);
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
   const handleButtonClick = (directionRight) => {
-    if(directionRight){
+    if (directionRight) {
       setDirectionRight(true);
-      setCurrentIndex((currentIndex + 1) % projectsInfo.length)
+      setCurrentIndex((currentIndex + 1) % projectsInfo.length);
     } else {
-      setDirectionRight(false)
-      setCurrentIndex(currentIndex === 0 ? projectsInfo.length -1 : currentIndex - 1);
+      setDirectionRight(false);
+      setCurrentIndex(
+        currentIndex === 0 ? projectsInfo.length - 1 : currentIndex - 1
+      );
     }
-  }
+  };
   return (
     <section className={styles.projectsSection}>
       <AnimatePresence exitBeforeEnter>
@@ -89,9 +91,11 @@ const ProjectsSection = () => {
                   <p className="inverted">{item.description}</p>
                   <p>
                     <Button href={item.website}>Try it out</Button>
-                    <Button href={item.gitHub} light>
-                      GitHub
-                    </Button>
+                    {item.gitHub && (
+                      <Button href={item.gitHub} light>
+                        GitHub
+                      </Button>
+                    )}
                   </p>
                   <p className="text_small">Built with {item.builtWith}</p>
                 </article>
@@ -121,4 +125,3 @@ const ProjectsSection = () => {
 };
 
 export default ProjectsSection;
-

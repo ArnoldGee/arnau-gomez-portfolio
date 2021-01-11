@@ -3,17 +3,3 @@
   overflow: hidden;
   width: 100%;
 }
-.heroContainer {
-  width: 100%;
-  background-color: var(--dominant);
-  margin: -1px 0;
-}
-.heroSVG {
-  position: relative;
-  display: block;
-  width: 100%;
-  min-width: 1000px;
-}
-.heroSVGFill {
-  fill: var(--dominant);
-}
