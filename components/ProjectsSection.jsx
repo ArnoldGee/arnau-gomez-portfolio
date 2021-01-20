@@ -53,9 +53,17 @@ const projectsInfo = [
     title: 'Better Life Index',
     description: 'A data visualization project made for the Bestiario agency.',
     builtWith: 'React, Redux, Charts.js',
-    website: 'https://arnoldgee.github.io/better-life-index-chart/',
+    website: 'https://arnoldgee.github.io/better-life-index-chart',
     gitHub: 'https://github.com/ArnoldGee/better-life-index-chart',
     picture: 'https://i.imgur.com/y6ZWhAU.png',
+  },
+  {
+    title: 'HTML Canvas Experiments',
+    description: 'Fancy visuals and animations with HTML Canvas.',
+    builtWith: 'HTML Canvas and vanilla JavaScript',
+    website: 'https://arnoldgee.github.io/html-canvas-practice-3',
+    gitHub: 'https://github.com/ArnoldGee/html-canvas-practice-3',
+    picture: 'https://i.imgur.com/oaK1itr.png',
   },
 ];
 
