@@ -49,6 +49,14 @@ const projectsInfo = [
     gitHub: 'https://github.com/ArnoldGee/mat-mat',
     picture: 'https://i.imgur.com/430SpnG.jpg',
   },
+  {
+    title: 'Better Life Index',
+    description: 'A data visualization project made for the Bestiario agency.',
+    builtWith: 'React, Redux, Charts.js',
+    website: 'https://arnoldgee.github.io/better-life-index-chart/',
+    gitHub: 'https://github.com/ArnoldGee/better-life-index-chart',
+    picture: 'https://i.imgur.com/y6ZWhAU.png',
+  },
 ];
 
 const ProjectsSection = () => {
